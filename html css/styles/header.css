@@ -1,0 +1,193 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(223, 218, 218);
+    
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    
+}
+.hamburger{
+height: 24px;
+margin-left: 24px;
+margin-right: 20px;
+cursor: pointer;
+}
+
+.logo{
+    height: 24px;
+    cursor: pointer;
+}
+.middle{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 191, 191);
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 3px (0, 0, 0, 0.05);
+    width: 0;
+    cursor: pointer;
+}
+.search-bar::placeholder{
+    font-family: roboto, Arial;
+    font-size: 14px;
+}
+.search{
+  height: 25px;
+  margin: 4px;
+  
+}
+.search-button{
+    height: 38px;
+    width: 66px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(194, 191, 191) ;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: rgb(244, 244, 244);
+    margin-left: -2.7px;
+    cursor: pointer;
+    
+}
+
+.search-button,
+.voice-button,
+.upload-icon,
+.apss-icon,
+.not{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-icon .tooltip,
+.apss-icon .tooltip,
+.not .tooltip{
+position:absolute;
+background-color: gray ;
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 4px;
+padding-bottom: 4px;
+border-radius: 2px;
+font-size: 12px;
+bottom: -30px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events:none ;
+white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon:hover .tooltip,
+.apss-icon:hover .tooltip,
+.not:hover .tooltip{
+    opacity: 1; 
+}
+
+.voice{
+    height: 30px;
+    width: 40px;
+    
+    
+}
+
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border: 10px;
+    border-color:rgb(255, 255, 255) ;
+    border-radius: 20px;
+    align-items: center;
+    padding-left: 1px;
+    padding-right: 5px ;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+    
+}
+.right{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+.upload{
+    height: 26px;
+    width: 30px;
+    cursor: pointer;
+    
+}
+.apps{
+    height: 26px;
+    width: 30px;
+    cursor: pointer;
+    
+}
+.notifications{
+    height: 26px;
+    width: 30px;
+    cursor: pointer;
+    
+}
+.notification-contanier{
+    position: relative;
+}
+
+.notifications-count{
+position: absolute;
+top:-2px;
+right: 0px;
+background-color: rgb(191, 28, 28);
+color: white;
+font-family: roboot,arial;
+font-size: 11px;
+padding-left: 6px;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 6px;
+border-radius: 10px;
+
+}
+.pict{
+    height: 32px;
+    width: 32px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
